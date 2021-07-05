@@ -3,8 +3,9 @@
 
 | Exercise       | Status             |
 | -------------- | ---------          |
-| Get Method validation        | :white_check_mark: |
-| Logs        | :white_check_mark: |
+| Response validation        | :white_check_mark: |
+| Hamcrest matchers        | :white_check_mark: |
+| Logging        | :white_check_mark: |
 
 ___
 

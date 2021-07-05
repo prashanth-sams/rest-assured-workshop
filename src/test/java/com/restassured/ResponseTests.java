@@ -1,3 +1,11 @@
+/**
+ *
+ * Author: Prashanth Sams
+ *
+ * JsonPath, GPath, XmlPath
+ *
+ **/
+
 package com.restassured;
 
 import static io.restassured.RestAssured.*;
@@ -7,7 +15,7 @@ import io.restassured.http.ContentType;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class GetTests {
+public class ResponseTests {
 
     @Test
     @DisplayName("Get method - status validation")
