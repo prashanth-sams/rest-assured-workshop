@@ -1,9 +1,9 @@
 # REST Assured Dumbs
 > Exercise yourself with REST Assured
 
-| Exercise       | Status             |
-| -------------- | ---------          |
-| Response validation        | :white_check_mark: |
+| Exercise       | Status             | Exercise       | Status             |
+| -------------- | ---------          | -------------- | ---------          |
+| Response validation        | :white_check_mark: | Parameterization        | :white_check_mark: |
 | Hamcrest matchers        | :white_check_mark: |
 | Logging        | :white_check_mark: |
 
