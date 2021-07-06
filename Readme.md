@@ -4,8 +4,8 @@
 | Exercise       | Status             | Exercise       | Status             |
 | -------------- | ---------          | -------------- | ---------          |
 | Response validation        | :white_check_mark: | Parameterization        | :white_check_mark: |
-| Hamcrest matchers        | :white_check_mark: |
-| Logging        | :white_check_mark: |
+| Hamcrest matchers        | :white_check_mark: | Specification        | :white_check_mark: |
+| Logging        | :white_check_mark: | Response extraction        | :white_check_mark: |
 
 ___
 
