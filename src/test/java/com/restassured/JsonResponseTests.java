@@ -2,7 +2,7 @@
  *
  * Author: Prashanth Sams
  *
- * JsonPath, GPath, XmlPath
+ * JsonPath
  *
  **/
 
@@ -15,10 +15,10 @@ import io.restassured.http.ContentType;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-public class ResponseTests {
+public class JsonResponseTests {
 
     @Test
-    @DisplayName("Get method - status validation")
+    @DisplayName("Status validation")
     void statusValidation() {
         given().
         when().
@@ -28,7 +28,7 @@ public class ResponseTests {
     }
 
     @Test
-    @DisplayName("Get method - response body validation")
+    @DisplayName("Response body validation")
     void bodyValidation() {
         given().
         when().
@@ -40,7 +40,7 @@ public class ResponseTests {
     }
 
     @Test
-    @DisplayName("Get method - response content-type validation")
+    @DisplayName("Response content-type validation")
     void contentTypeValidation() {
         given().
         when().
@@ -48,6 +48,16 @@ public class ResponseTests {
         then().
             assertThat().contentType(ContentType.JSON).
             assertThat().contentType("application/json");
+    }
+
+    @Test
+    @DisplayName("Last from array validation")
+    void lastFromArray() {
+        given().
+        when().
+            get("https://reqres.in/api/users?page=2").
+        then().
+            assertThat().body("data[-1].id", equalTo(12));
     }
 
 }
