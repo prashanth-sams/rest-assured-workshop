@@ -1,4 +1,4 @@
-# REST Assured Dumbs
+# REST Assured Workshop
 > Exercise yourself with REST Assured
 
 | Exercise       | Status             | Exercise       | Status             |
@@ -6,8 +6,26 @@
 | JSON Response validation        | :white_check_mark: | Hamcrest matchers        | :white_check_mark: |
 | XML Response validation        | :white_check_mark: | Specification        | :white_check_mark: |
 | Logging        | :white_check_mark: | Response extraction        | :white_check_mark: |
-| Parameterization        | :white_check_mark: |
+| Parameterization        | :white_check_mark: | Serialization        | :white_check_mark: |
+| Deserialization        | :white_check_mark: |
 ___
+
+### Dockerized JSON Server
+```shell
+docker-compose up -d
+```
+or
+```shell
+npm i -g json-server
+json-server --watch src/test/resources/serialization.json
+```
+http://0.0.0.0:3000/posts
+
+---
+
+https://www.jsonschema2pojo.org/
+
+
 
 ### setup
 1. Go to `IntelliJ IDEA > Preferences > Plugins`

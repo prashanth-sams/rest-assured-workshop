@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "name": "Prashanth",
+      "job": "Engineer"
+    },
+    {
+      "name": "Sams",
+      "job": "Farmer"
+    }
+  ]
+}
