@@ -8,6 +8,7 @@
 | Logging        | :white_check_mark: | Response extraction        | :white_check_mark: |
 | Parameterization        | :white_check_mark: | Serialization        | :white_check_mark: |
 | Deserialization        | :white_check_mark: | Custom ObjectMapper        | :white_check_mark: |
+| JsonPath        | :white_check_mark: |
 ___
 
 ### Dockerized JSON Server
@@ -24,7 +25,7 @@ http://0.0.0.0:3000/posts
 ---
 
 https://www.jsonschema2pojo.org/
-
+https://jsonpath.curiousconcept.com/
 
 
 ### setup
