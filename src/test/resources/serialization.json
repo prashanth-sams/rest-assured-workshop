@@ -2,11 +2,13 @@
   "users": [
     {
       "name": "Prashanth",
-      "job": "Engineer"
+      "job": "Engineer",
+      "age": 21
     },
     {
       "name": "Sams",
-      "job": "Farmer"
+      "job": "Farmer",
+      "age": 32
     }
   ]
 }

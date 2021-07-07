@@ -10,7 +10,7 @@ import java.util.Map;
         "name",
         "job"
 })
-
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class UserList {
 
     @JsonProperty("name")
@@ -25,29 +25,14 @@ public class UserList {
         return name;
     }
 
-    @JsonProperty("name")
-    public void setName(String name) {
-        this.name = name;
-    }
-
     @JsonProperty("job")
     public String getJob() {
         return job;
     }
 
-    @JsonProperty("job")
-    public void setJob(String job) {
-        this.job = job;
-    }
-
     @JsonAnyGetter
     public Map<String, Object> getAdditionalProperties() {
         return this.additionalProperties;
-    }
-
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
     }
 
     @Override
