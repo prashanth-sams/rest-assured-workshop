@@ -26,7 +26,11 @@ public class HamcrestTests {
             assertThat().body("places.'place name'", hasItem("Beverly Hills")).
             assertThat().body("places.'place name'", not(hasItem("Beverly Hi"))).
             assertThat().body("places.'place name'", hasSize(1)).
-            assertThat().body("places[0].'place name'", equalTo("Beverly Hills"));
+            assertThat().body("places[0].'place name'", equalTo("Beverly Hills")).
+            assertThat().body("places[0].'place name'", containsStringIgnoringCase("BEVERLY Hills")).
+            assertThat().body("places[0].'place name'", notNullValue()).
+            assertThat().body("places[0].'place name'", not(emptyString())).
+            assertThat().body("'post code'", anyOf(equalTo("90210"), equalTo("90211")));
     }
 
 }
