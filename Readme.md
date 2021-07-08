@@ -24,9 +24,13 @@ http://0.0.0.0:3000/posts
 
 ---
 
+### Useful Links
+
 https://www.jsonschema2pojo.org/
+
 https://jsonpath.curiousconcept.com/
 
+---
 
 ### setup
 1. Go to `IntelliJ IDEA > Preferences > Plugins`
