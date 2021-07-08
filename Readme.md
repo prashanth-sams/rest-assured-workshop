@@ -1,14 +1,14 @@
 # REST Assured Workshop
 > Exercise yourself with REST Assured
 
-| Exercise       | Status             | Exercise       | Status             |
+| Exercise       | Status             | Exercise       | Status             | Exercise       | Status             |
 | -------------- | ---------          | -------------- | ---------          |
-| JSON Response validation        | :white_check_mark: | Hamcrest matchers        | :white_check_mark: |
-| XML Response validation        | :white_check_mark: | Specification        | :white_check_mark: |
-| Logging        | :white_check_mark: | Response extraction        | :white_check_mark: |
+| JSON Response validation        | :white_check_mark: | Hamcrest matchers        | :white_check_mark: | JsonPath        | :white_check_mark: |
+| XML Response validation        | :white_check_mark: | Specification        | :white_check_mark: | Custom ObjectMapper        | :white_check_mark: |
+| Logging        | :white_check_mark: | Response extraction        | :white_check_mark: | Deserialization        | :white_check_mark: |
 | Parameterization        | :white_check_mark: | Serialization        | :white_check_mark: |
-| Deserialization        | :white_check_mark: | Custom ObjectMapper        | :white_check_mark: |
-| JsonPath        | :white_check_mark: |
+
+
 ___
 
 ### Dockerized JSON Server
