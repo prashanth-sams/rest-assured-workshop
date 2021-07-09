@@ -2,9 +2,10 @@
  *
  * Author: Prashanth Sams
  *
+ * Request Specification & Response Specification
  **/
 
-package com.restassured;
+package com.restassured.optimization;
 
 
 import io.restassured.builder.RequestSpecBuilder;
