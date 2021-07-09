@@ -13,6 +13,7 @@ import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -20,13 +21,13 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.hasItem;
 
 
-public class Specification {
+public class Specification1 {
 
     private static RequestSpecification requestSpec;
     private static ResponseSpecification responseSpec;
 
     @BeforeAll
-    public static void initSpecs() {
+    public static void setup() {
         requestSpec = new RequestSpecBuilder()
                 .setBaseUri("http://api.zippopotam.us")
                 .build();
@@ -35,6 +36,11 @@ public class Specification {
                 .expectStatusCode(200)
                 .expectContentType(ContentType.JSON)
                 .build();
+    }
+
+    @AfterAll
+    public static void cleanup() {
+        responseSpec = null;
     }
 
     @Test

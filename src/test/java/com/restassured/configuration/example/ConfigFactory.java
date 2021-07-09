@@ -3,10 +3,8 @@ package com.restassured.configuration.example;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
-import io.restassured.config.FailureConfig;
-import io.restassured.config.ObjectMapperConfig;
-import io.restassured.config.RedirectConfig;
-import io.restassured.config.RestAssuredConfig;
+import io.restassured.config.*;
+import io.restassured.filter.log.LogDetail;
 import io.restassured.listener.ResponseValidationFailureListener;
 import io.restassured.path.json.mapper.factory.Jackson2ObjectMapperFactory;
 
@@ -19,6 +17,7 @@ public class ConfigFactory {
                         response.statusCode(), response.body().asPrettyString());
 
         return RestAssured.config().
+                logConfig(LogConfig.logConfig().enableLoggingOfRequestAndResponseIfValidationFails(LogDetail.ALL)).
                 failureConfig(FailureConfig.failureConfig().failureListeners(failureListener)).
                 redirect(RedirectConfig.redirectConfig().maxRedirects(1)).
                 objectMapperConfig(ObjectMapperConfig.objectMapperConfig().jackson2ObjectMapperFactory(getDefaultMapper()));

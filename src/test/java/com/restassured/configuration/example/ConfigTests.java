@@ -1,5 +1,6 @@
 package com.restassured.configuration.example;
 
+import com.restassured.deserialization.pojo.User;
 import com.restassured.deserialization.pojo.UserList;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.Assertions;
