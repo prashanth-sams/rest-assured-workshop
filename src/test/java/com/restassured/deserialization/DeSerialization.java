@@ -7,7 +7,6 @@
 package com.restassured.deserialization;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.restassured.deserialization.pojo.User;
 import com.restassured.deserialization.pojo.UserList;
 import com.restassured.serialization.pojo.BioPojo;
@@ -21,8 +20,6 @@ import static io.restassured.RestAssured.given;
 
 
 public class DeSerialization {
-
-    public static final ObjectMapper MAPPER = new ObjectMapper();
 
     public static void main(String[] args) {
 
@@ -46,7 +43,7 @@ public class DeSerialization {
         String url2 = "https://reqres.in/api/users";
         BioPojo bio =
                 given().
-                        get(url2).as(BioPojo.class);
+                    get(url2).as(BioPojo.class);
         System.out.println(bio.toString());
 
     }

@@ -4,7 +4,7 @@
  *
  **/
 
-package com.restassured;
+package com.restassured.jsonresponse;
 
 import org.junit.jupiter.api.Test;
 

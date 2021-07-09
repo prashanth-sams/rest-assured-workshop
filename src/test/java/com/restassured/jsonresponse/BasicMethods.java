@@ -58,8 +58,8 @@ public class BasicMethods {
         System.out.println(response.getTimeIn(TimeUnit.MINUTES));
 
         get(BASE_URL).
-                then().
-                time(lessThan(2L), TimeUnit.SECONDS);
+        then().
+            time(lessThan(2L), TimeUnit.SECONDS);
     }
 
 }
