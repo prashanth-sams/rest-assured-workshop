@@ -62,4 +62,11 @@ public class BasicMethods {
             time(lessThan(2L), TimeUnit.SECONDS);
     }
 
+    @Test
+    @DisplayName("Store response as String")
+    void storeResponseAsString() {
+        String output = response.asString();
+        System.out.println(output);
+    }
+
 }
