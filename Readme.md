@@ -8,7 +8,7 @@
 | Logging        | :white_check_mark: | Response extraction        | :white_check_mark: | Deserialization        | :white_check_mark: |
 | Parameterization        | :white_check_mark: | Serialization        | :white_check_mark: | Simple Safe Methods        | :white_check_mark: |
 | Destructive Methods        | :white_check_mark: | Configuration        | :white_check_mark: | URL Forwarding        | :white_check_mark: |
-| Optimization        | :white_check_mark: |
+| Optimization        | :white_check_mark: | Query Params        | :white_check_mark: |
 
 ___
 
